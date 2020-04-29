@@ -147,7 +147,7 @@ relPaths (xs,y)     = [ prefix ++ suffix | suffix <- suffixes ]
   where prefix      = foldr (</>) y xs
 
 suffixes           :: [String]
-suffixes            = [".hs",".lhs", ".imports"]
+suffixes            = [".hs",".lhs",".imports",".purs"]
 
 -- | The files in which a module might reside.
 -- We report only files that exist.
